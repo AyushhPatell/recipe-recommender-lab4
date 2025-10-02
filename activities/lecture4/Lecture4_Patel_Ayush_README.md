@@ -2,7 +2,7 @@
 CSCI 3172 - Lecture 4 Activity (L4V3)
 --------------------------------------------
 
-My INFORMATION:
+- My INFORMATION:
 Name: Ayush Patel
 CSID: aspatel
 
