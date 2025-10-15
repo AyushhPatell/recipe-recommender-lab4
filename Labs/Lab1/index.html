@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Inventory Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>TechShop Inventory System</h1>
+    </header>
+
+    <main>
+        <section class="add-item-section">
+            <h2>Add New Item</h2>
+            <div class="form-group">
+                <input type="text" id="itemName" placeholder="Item Name">
+                <input type="text" id="itemType" placeholder="Type">
+                <input type="number" id="itemPrice" placeholder="Price ($)">
+                <input type="number" id="itemQuantity" placeholder="Quantity">
+                <input type="text" id="itemDescription" placeholder="Description">
+                <button onclick="addItem()">Add Item</button>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <h2>Search Inventory</h2>
+            <div class="form-group">
+                <input type="text" id="searchQuery" placeholder="Search by name or type">
+                <button onclick="searchItems()">Search</button>
+            </div>
+        </section>
+
+        <section class="actions-section">
+            <h2>Inventory Actions</h2>
+            <div class="form-group">
+                <input type="text" id="removeItemName" placeholder="Item name to remove">
+                <button onclick="removeItem()">Remove Item</button>
+            </div>
+            <div class="form-group">
+                <input type="number" id="discountPercent" placeholder="Discount %">
+                <button onclick="applyDiscountToAll()">Apply Discount</button>
+            </div>
+            <div class="form-group">
+                <button onclick="calculateTotalValue()">Calculate Total Value</button>
+                <button onclick="groupByCategory()">Group by Category</button>
+                <button onclick="findDuplicates()">Find Duplicates</button>
+            </div>
+        </section>
+
+        <section class="display-section">
+            <h2>Inventory Items</h2>
+            <div id="totalValue" class="total-value"></div>
+            <div id="inventoryDisplay" class="inventory-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>TechShop Inventory Management System - CSCI 3172 Lab 2</p>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
