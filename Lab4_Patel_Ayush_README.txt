@@ -5,9 +5,9 @@
 ### Application Description
 A user friendly Recipe Recommender web application that helps users discover delicious recipes based on their preferences. Users can search by ingredient, category, or cuisine type, or get surprised with random recipe suggestions.
 
-### Netlify URL:
-### GitHub Repository:
-### GitLab Repository:
+### Netlify URL: https://recipe-recommender-lab4.netlify.app/
+### GitHub Repository: https://github.com/AyushhPatell/recipe-recommender-lab4
+### GitLab Repository: https://git.cs.dal.ca/aspatel/csci3172/-/tree/main/Labs/lab4
 
 
 - API: TheMealDB API.
