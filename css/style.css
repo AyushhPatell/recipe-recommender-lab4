@@ -1,0 +1,298 @@
+:root {
+    --main-color: #0d6efd;
+    --accent-color: #6c757d;
+    --success-color: #198754;
+    --error-color: #dc3545;
+    --warn-color: #ffc107;
+    --info-color: #0dcaf0;
+}
+
+body
+{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.navbar-brand
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar-brand i
+{
+    color: var(--warn-color);
+}
+
+.card
+{
+    border: none;
+    border-radius: 14px;
+    transition: 0.3s ease all;
+}
+
+.card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-control,
+.form-select
+{
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    transition: 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus
+{
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn
+{
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+.btn-primary
+{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.btn-primary:hover
+{
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: scale(1.05);
+}
+
+.recipe-card
+{
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.recipe-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.recipe-card img
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.recipe-card:hover img
+{
+    transform: scale(1.1);
+}
+
+.recipe-title
+{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.recipe-category
+{
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--info-color);
+    color: white;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-right: 5px;
+}
+
+.recipe-area
+{
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--warn-color);
+    color: #333;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+#loadingBox .spinner-border
+{
+    width: 3rem;
+    height: 3rem;
+}
+
+.modal-content
+{
+    border-radius: 15px;
+}
+
+.modal-header
+{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close
+{
+    filter: brightness(0) invert(1);
+}
+
+.recipe-detail-image
+{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.ingredients-list
+{
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ingredients-list h6
+{
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.ingredient-item
+{
+    padding: 5px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.ingredient-item:last-child
+{
+    border-bottom: none;
+}
+
+.instructions-section
+{
+    background: #fff;
+    border-left: 4px solid var(--main-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.instructions-section h6
+{
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.alert
+{
+    border-radius: 10px;
+}
+
+.fade-in
+{
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up
+{
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .navbar-brand
+    {
+        font-size: 1.2rem;
+    }
+
+    .recipe-card img
+    {
+        height: 150px;
+    }
+
+    .modal-dialog
+    {
+        margin: 10px;
+    }
+}
+
+*:focus
+{
+    outline: 2px solid var(--main-color);
+    outline-offset: 2px;
+}
+
+footer
+{
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid #dee2e6;
+}
+
+.badge
+{
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.no-results
+{
+    text-align: center;
+    padding: 50px;
+    color: #6c757d;
+}
+
+.no-results i
+{
+    font-size: 4rem;
+    color: #dee2e6;
+    margin-bottom: 20px;
+}
