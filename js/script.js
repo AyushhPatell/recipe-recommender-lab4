@@ -7,7 +7,7 @@ const resultsSection = document.getElementById('showResults');
 const recipeResults = document.getElementById('recipesGrid');
 const resultCount = document.getElementById('countTag');
 const recipeModal = new bootstrap.Modal(document.getElementById('detailsPopup'));
-
+const SERVER_URL = 'https://recipe-recommender-lab4.netlify.app/';
 const API_BASE_URL = 'https://www.themealdb.com/api/json/v1/1';
 
 searchForm.addEventListener('submit', async (e) => {
